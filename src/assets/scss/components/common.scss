@@ -31,5 +31,17 @@
                 box-shadow: none;
             }
         }
+        .city-select{
+             /* for Firefox */
+            -moz-appearance: none;
+            /* for Chrome */
+            -webkit-appearance: none;
+            background-color: transparent;
+            border: none;
+            width: 100%;
+        }
+        .medicine-search-box{
+            width: 100%;
+        }
     }
 }

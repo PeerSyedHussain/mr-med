@@ -9926,5 +9926,17 @@ h3 {
 #header nav .upload-btn:focus {
   box-shadow: none;
 }
+#header nav .city-select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+}
+#header nav .medicine-search-box {
+  width: 100%;
+}
 
 /*# sourceMappingURL=app.css.map */
