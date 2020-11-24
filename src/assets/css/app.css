@@ -9897,6 +9897,9 @@ h3 {
     border-color: #dee2e6;
   }
 }
+#header {
+  background-color: #fff;
+}
 #header nav .logo-img {
   width: 200px;
 }
@@ -9926,7 +9929,15 @@ h3 {
 #header nav .upload-btn:focus {
   box-shadow: none;
 }
-#header nav .city-select {
+#header nav .basic-details {
+  display: flex;
+  align-items: center;
+  background-color: #F8F8F8;
+  border-radius: 15px;
+  box-sizing: border-box;
+  border: 1px solid #E4E3F2;
+}
+#header nav .basic-details .city-select, #header nav .basic-details .medicine-search-box {
   /* for Firefox */
   -moz-appearance: none;
   /* for Chrome */
@@ -9935,8 +9946,22 @@ h3 {
   border: none;
   width: 100%;
 }
-#header nav .medicine-search-box {
-  width: 100%;
+#header nav .basic-details .city-select:hover, #header nav .basic-details .medicine-search-box:hover {
+  cursor: pointer;
+}
+#header nav .basic-details .mappin-icon {
+  position: absolute;
+  left: -10px;
+}
+#header nav .basic-details .location-icon, #header nav .basic-details .search-icon {
+  position: absolute;
+  right: 0;
+}
+#header nav .basic-details .city-select {
+  position: relative;
+}
+#header nav .basic-details .medicine-search-box:focus {
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=app.css.map */

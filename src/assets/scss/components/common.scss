@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 #header{
+    background-color: #fff;
     nav{
         .logo-img{
             width: 200px;
@@ -31,17 +32,43 @@
                 box-shadow: none;
             }
         }
-        .city-select{
-             /* for Firefox */
-            -moz-appearance: none;
-            /* for Chrome */
-            -webkit-appearance: none;
-            background-color: transparent;
-            border: none;
-            width: 100%;
-        }
-        .medicine-search-box{
-            width: 100%;
+        
+        
+        .basic-details{
+            display: flex;
+            align-items: center;
+            background-color: #F8F8F8;
+            border-radius: 15px;
+            box-sizing: border-box;
+            border: 1px solid #E4E3F2;
+            .city-select,.medicine-search-box{
+                /* for Firefox */
+               -moz-appearance: none;
+               /* for Chrome */
+               -webkit-appearance: none;
+               background-color: transparent;
+               border: none;
+               width: 100%;
+               &:hover{
+                   cursor: pointer;
+               }
+           }
+           .mappin-icon{
+               position: absolute;
+               left:-10px
+           }
+           .location-icon,.search-icon{
+               position: absolute;
+               right: 0;
+           }
+           .city-select{
+               position: relative;
+           }
+           .medicine-search-box{
+               &:focus{
+                   box-shadow: none;
+               }
+           }
         }
     }
 }
