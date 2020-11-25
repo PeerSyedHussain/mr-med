@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
 #header{
-    background-color: #fff;
+    background-color: $text-white;
     nav{
         .logo-img{
             width: 200px;
         }
         .upload-btn{
-            background-color: #766CEB;
+            background-color: $primary-color;
             border-radius: 15px;
             -webkit-border-radius: 15px;
             -moz-border-radius: 15px;
@@ -21,7 +26,7 @@
             justify-self: center;
             align-items: center;
             text-transform: uppercase;
-            color: #fff;
+            color: $text-white;
             line-height: 20px;
             padding: 10px 20px;
             border-color: transparent;
@@ -41,6 +46,7 @@
             border-radius: 15px;
             box-sizing: border-box;
             border: 1px solid #E4E3F2;
+            padding : 2px 20px;
             .city-select,.medicine-search-box{
                 /* for Firefox */
                -moz-appearance: none;
@@ -59,7 +65,7 @@
            }
            .location-icon,.search-icon{
                position: absolute;
-               right: 0;
+               right: 10px;
            }
            .city-select{
                position: relative;
@@ -69,6 +75,56 @@
                    box-shadow: none;
                }
            }
+        }
+    }
+}
+
+.text-grey{
+    color: $text-grey;
+}
+.separator-black{
+    border : 1px solid $black;
+    height: 28px;
+}
+.movable-header{
+    .separator-header-sec{
+        border-bottom: 1px solid #DBDEDF;
+    }
+    .user-optionality{
+        display: flex ;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .options{
+        display: flex;
+        align-items: center;
+        .option-bg{
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex ;
+            justify-content: center;
+            align-items: center;
+            &.bg-1{
+                background-color: $primary-color;
+            }
+            &.bg-2{
+                background-color: $secondary-color;
+            }
+            &.bg-3{
+                background-color: #E317CB;
+            }
+            &.bg-4{
+                background-color:#E3BC17;
+            }
+        }
+        .option-heading{
+            color : $text-grey;
+            font-weight: 500;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            line-height: 22px;
         }
     }
 }
