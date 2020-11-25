@@ -5,6 +5,9 @@
     margin-left: 0px;
     margin-right: 0px;
 }
+body{
+    background-color: $grey-bg-color;
+}
 #header{
     background-color: $text-white;
     nav{
@@ -87,6 +90,7 @@
     height: 28px;
 }
 .movable-header{
+    background-color: $white-bg;
     .separator-header-sec{
         border-bottom: 1px solid #DBDEDF;
     }
