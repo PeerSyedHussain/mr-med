@@ -4,9 +4,7 @@
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
         // padding: 10px;
-        .heading{
-            font-family: 'Roboto',sans-serif;
-            
+        .heading{            
             font-size: 24px;
             line-height: 28px;
             
@@ -81,4 +79,58 @@
 
 .health-concern-section{
     background-color: $white;
+    .heading{
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 41px;
+        color: $text-grey;   
+        position: relative;
+        .heading-bottom-line{
+            border: 2px solid $primary-color;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            right: 0;
+            width: 50%;
+        }
+    }
+    .health-concern-slider{
+        .healthy-pics{
+            background: #EBFCFB;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;;
+            padding : 10px;
+        }
+        .slick-slide{
+            margin : 0px 10px;
+        }
+        .affected-area{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            text-transform: capitalize;
+            color: $text-grey;
+        }
+        .shop-link{
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 26px;
+            text-transform: capitalize;
+            color: #00757E;
+            &:after{
+                content : '\003E';
+                margin-left: 10px;
+            }
+        }
+        .slick-arrow{
+            background-color: #000;
+            top: -15%;
+            &.slick-prev{
+                left: 90%;
+            }
+            &.slick-next{
+                right: 5%;
+            }
+        }
+    }
 }

@@ -7,6 +7,7 @@
 }
 body{
     background-color: $grey-bg-color;
+    font-family:'Roboto', sans-serif;
 }
 #header{
     background-color: $text-white;
@@ -21,7 +22,6 @@ body{
             -moz-border-radius: 15px;
             -ms-border-radius: 15px;
             -o-border-radius: 15px;
-            font-family: 'Roboto', sans-serif;
             font-weight: 700;
             font-style: normal;
             font-size: 18px;
@@ -126,7 +126,6 @@ body{
             color : $text-grey;
             font-weight: 500;
             font-size: 20px;
-            font-family: 'Roboto', sans-serif;
             font-style: normal;
             line-height: 22px;
         }
