@@ -77,7 +77,7 @@
     }
 }
 
-.health-concern-section,.chronic-disease-section,.why-med-sec,.assistance-program-sec{
+.health-concern-section,.chronic-disease-section,.why-med-sec,.assistance-program-sec,.imported-sec{
     background-color: $white;
     .heading{
         font-weight: 500;
@@ -176,13 +176,13 @@
     }
 }
 
-.assistance-program-sec{
-    .program-desc{
+.assistance-program-sec,.imported-sec{
+    .program-desc,.import-desc{
         font-size: 22px;
         line-height:36px;
         color: $black;
     }
-    .register-program{
+    .register-program,.import{
         background-color: $primary-color;
         border-radius: 15px    ;
         -webkit-border-radius: 15px;
@@ -217,10 +217,86 @@
         -o-border-radius: 30px;
         height:150px;
     }
-    .register-intro{
+    .register-intro,.import-reason{
         font-weight: bold;
         font-size: 26px;
         line-height: 41px;
         color: $black;
+    }
+}
+
+.imported-sec{
+    .import-round{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .import-bg{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.bg-1{
+                background-color: #7B9BCB;
+            }
+            &.bg-2{
+                background-color: #7BCA9F;
+            }
+            &.bg-3{
+                background-color: #7BCA9F;
+            }
+            &.bg-4{
+                background-color: #A497C9;
+            }
+            .import-pic{
+                width : 60px;
+            }
+        }   
+    }
+}
+
+.about-section{
+    .logo-pic{
+        width:180px;
+    }
+    .company-desc{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 36px;
+        color: #151414;
+    }
+}
+
+.our-services{
+    background-color: $white;
+    .service{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .service-pic{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .count{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 34px;
+            color: $primary-color;
+        }
+        .count-desc{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 35px;
+            color: $black;
+        }
     }
 }
