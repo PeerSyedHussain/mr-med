@@ -77,7 +77,7 @@
     }
 }
 
-.health-concern-section{
+.health-concern-section,.chronic-disease-section{
     background-color: $white;
     .heading{
         font-weight: 500;
@@ -94,7 +94,7 @@
             width: 50%;
         }
     }
-    .health-concern-slider{
+    .health-concern-slider,.chronic-disease-slider{
         .healthy-pics{
             background: #EBFCFB;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -130,6 +130,22 @@
             }
             &.slick-next{
                 right: 5%;
+            }
+        }
+        .chronic-box{
+            background: $white;
+            border: 1px solid #727272;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            .chronic-pics{
+                img{
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                }
             }
         }
     }
